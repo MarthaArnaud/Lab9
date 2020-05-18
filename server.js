@@ -6,6 +6,7 @@ const {Bookmarks} = require ('./models/bookmarksModel');
 const mongoose = require ('mongoose');
 const cors = require( './middleware/cors' );
 const TOKEN = '2abbf7c3-245b-404f-9473-ade729ed4653';
+const {DATABASE_URL,PORT}= require('./config');
 
 const app = express();
 const jsonParser = bodyParser.json();
@@ -245,7 +246,7 @@ app.patch('/bookmark/:id',jsonParser,(req, res)=>{
     
 });
 
-app.listen(1000 ,()=>{
+app.listen(PORT ,()=>{
   console.log("This server is running on port 1000"); 
   new Promise ((resolve, reject)=>{
     const settings = {
