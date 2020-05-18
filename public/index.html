@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Bookmarks App</title>
+        <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Welcome to the Bookmarks App</h1>
+        <section class="allBookmarks">
+
+        </section>
+        <div>
+        <h2>Post a new Bookmark</h2>
+        <form class="add-bookmark-form">
+            <label for="bookmarkId">
+                Id:
+            </label>
+            <input type="text" id="bookmarkId" />
+            <label for="bookmarkTitle">
+                Title:
+            </label>
+            <input type="text" id="bookmarkTitle" />
+            <label for="bookmarkDescription">
+                Description:
+            </label>
+            <input type="text" id="bookmarkDescription" />
+            <label for="bookmarkUrl">
+                Url:
+            </label>
+            <input type="text" id="bookmarkUrl" />
+            <label for="bookmarkRating">
+                Rating:
+            </label>
+            <input type="number" id="bookmarkRating" />
+            <button type="submit">
+                Add Bookmark
+            </button>
+        </form>
+        <section class="post-results">
+
+        </section>
+    </div>
+        <div>
+            <h2>Delete bookmark given an id</h2>
+            <form class="delete-bookmark">
+                <label for="idToDelete">
+                    Id:
+                </label>
+                <input type="text" id="idToDelete"/>
+                <button type="submit">
+                    Delete Bookmark
+                </button>
+                <section class="delete-results">
+            
+                </section>
+            </form>
+        </div>
+        <div>
+            <h2>Update Bookmark given an id</h2>
+            <form class="update-bookmark">
+                <label for ="idToUpdate">
+                    Id:
+                </label>
+                <input type="text" id="idToUpdate"/>
+                <div>
+                    <p>Fill only the fields you want to update</p>
+                    <label for="titleToUpdate">
+                        Title:
+                    </label>
+                    <input type="text" id="titleToUpdate"/>
+                    <label for="descriptionToUpdate">
+                        Description:
+                    </label>
+                    <input type="text" id="descriptionToUpdate"/>
+                    <label for="urlToUpdate">
+                        Url:
+                    </label>
+                    <input type="text" id="urlToUpdate"/>
+                    <label for="ratingToUpdate">
+                        Rating:
+                    </label>
+                    <input type="text" id="ratingToUpdate"/>
+                    <button type="submit">
+                        Update Bookmark
+                    </button>
+                </div>
+            </form>
+            <section class="update-results">
+            
+            </section>
+        </div>
+        <div>
+            <h2>Find a bookmark given a title</h2>
+            <form class="getBookmark-title">
+                <label for="searchTitle">
+                    Title
+                </label>
+                <input type="text" id="searchTitle"/>
+                <button type="submit">
+                    Search Bookmark
+                </button>
+            </form>
+            <section class="get-results">
+            
+            </section>
+        </div>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>

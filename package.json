@@ -1,0 +1,21 @@
+{
+  "name": "bookmarks",
+  "version": "1.0.0",
+  "description": "web app that allows crud operations for bookmarks",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "martha arnaud",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14",
+    "morgan": "^1.10.0",
+    "uuid": "^8.0.0",
+    "uuidv4": "^6.0.8"
+  }
+}
